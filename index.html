@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loukya | Portfolio</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Loukya</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header id="about" class="hero">
+
+  <div class="hero-text">
+    <h1 class="hero-name">Hi, I'm Loukya 👋</h1>
+    <p>Associate Software Engineer | Accenture</p>
+  </div>
+
+  <div class="hero-img">
+    <img src="myphoto.jpg" alt="Lou photo">
+  </div>
+
+</header>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <h2>About Me</h2>
+  <p>
+    I build scalable applications, data pipelines, and AI-driven systems.
+    Focused on real-world solutions using modern technologies.
+  </p>
+</section>
+
+<!-- GRID -->
+<section class="grid-section">
+
+  <div class="left" id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Data Engineer</h3>
+      <p>Accenture</p>
+      <p>• Working on cloud-based data engineering and ETL workflows using Google Cloud Platform (GCP), BigQuery, Dataform, SQL, and Python.</p>
+      <p>• Collaborating on deployment activities, Git-based package management, and enterprise data pipeline development.</p>
+      <h3>Trainee</h3>
+      <p>Accenture</p>
+      <p>• Completed training in Informatica PowerCentre, Microsoft Power BI, SQL, Agile methodologies , and software development fundamentals.</p>
+      <p>• Worked on hands-on exercises and assessments related to ETL workflows and data processing.</p>
+      <p>• Gained exposer to data integration concepts, cloud technologies, and collaborative development practices.</p>
+    </div>
+  </div>
+
+  <div class="right">
+
+    <div class="card">
+      <h3>Skills</h3>
+      <div class="tags">
+        <span>Python</span>
+        <span>Java</span>
+        <span>SQL</span>
+        <span>Generative AI</span>
+        <span>Google Cloud Platform</span>
+        <span>ELT Pipelines</span>
+        <span>Agentic AI</span>
+        <span>Informatica PowerCentre</span>
+        <span>Microsoft Power BI</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Languages</h3>
+      <div class="tags">
+        <span>English</span>
+        <span>Hindi</span>
+        <span>Telugu</span>
+        <span>German</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Cyberbullying Detection</h3>
+      <p>The Cyberbullying Detection project is a critical initiative designed to identify and mitigate harmful online behavior, specifically cyberbullying. Given the widespread use of social media and digital communication platforms, cyberbullying has become a prevalent issue that can have severe psychological and emotional impacts on individuals, particularly young users. The goal of this project is to develop an automated system that can detect instances of cyberbullying in text data, thereby helping to create safer online environments.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Simon Game</h3>
+      <p>Interactive JavaScript game.</p>
+      <a href="https://github.com/loukyadonthumalla/the-simon-game" target="_blank">Code ↗</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Trivia Quiz</h3>
+      <p>Dynamic quiz app.</p>
+      <a href="https://github.com/loukyadonthumalla/trivia-quiz" target="_blank">Code ↗</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-bar">
+    <a href="#">LinkedIn</a>
+    <a href="#">Phone</a>
+    <a href="#">GitHub</a>
+  </div>
+</section>
+
+<!-- JS -->
+<script>
+  const glow = document.querySelector('.cursor-glow');
+
+  document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+</script>
+
+</body>
+</html>
